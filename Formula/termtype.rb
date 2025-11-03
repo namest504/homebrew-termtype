@@ -4,8 +4,8 @@
 class Termtype < Formula
   desc "A simple typing practice application for your terminal."
   homepage "https://github.com/namest504/termtype"
-  url "https://github.com/namest504/termtype/archive/refs/tags/v0.1.2-test.tar.gz"
-  sha256 "eb2f7d728bd1220021dbe17ecea651718f20673f8a4f78a245ac4440edeeb391"
+  url "https://github.com/namest504/termtype/archive/refs/tags/v0.1.3-test.tar.gz"
+  sha256 "19301f047efcf6e3a2e16ff9e85c0505ef051c9156c3e4334d8eb17471f7200c"
   license "MIT"
 
   depends_on "go" => :build
