@@ -35,13 +35,9 @@ class Termtype < Formula
 
   depends_on "go" => :build
 
-  def install
-    if build_from_source?
-      # brew install termtype --build-from-source
-      system "go", "build", "-o", "termtype", "./cmd/termtype"
-    end
-    bin.install "termtype"
-  end
+def install
+  bin.install "termtype"
+end
 
   def caveats
     <<~EOS
