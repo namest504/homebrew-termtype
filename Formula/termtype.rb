@@ -4,40 +4,38 @@
 class Termtype < Formula
   desc "A simple typing practice application for your terminal."
   homepage "https://github.com/namest504/termtype"
-  url "https://github.com/namest504/termtype/archive/refs/tags/v0.2.2.tar.gz"
-
-  sha256 "eeef957a66e1164bc6641c79ff8ac1826a3e1af9f2feffc6478e970b76e692f9"
+  url "https://github.com/namest504/termtype/archive/refs/tags/v0.2.3.tar.gz"
+  sha256 "84cb8e9d6b24ab227c422c199696204a48c3a2499671a5dd6ba69cb98a50e8d0"
 
   license "MIT"
 
-  
   on_macos do
     on_arm do # Apple Silicon
-      url "https://github.com/namest504/termtype/releases/download/v0.2.2/termtype_darwin_arm64.tar.gz"
-      sha256 "37052428c9a8550c1b9bc44e33490277ce63373dc75fc65515ba0755d472cc93"
+      url "https://github.com/namest504/termtype/releases/download/v0.2.3/termtype_darwin_arm64.tar.gz"
+      sha256 "ee76639c7dc202f6116e45650c0db52991f88f91d23bee90b8994b3ae9323f36"
     end
     on_intel do # Intel Mac
-      url "https://github.com/namest504/termtype/releases/download/v0.2.2/termtype_darwin_amd64.tar.gz"
-      sha256 "6a42cd680b9f9a107da7006f00e56a265e978a27e3a7c3bcd27fbf44268c2266"
+      url "https://github.com/namest504/termtype/releases/download/v0.2.3/termtype_darwin_amd64.tar.gz"
+      sha256 "26ddd4165bf1db9cc503df8d36f269138178f65a4c449d808d4e0377940197f5"
     end
   end
 
   on_linux do
     on_arm do # Linux ARM
-      url "https://github.com/namest504/termtype/releases/download/v0.2.2/termtype_linux_arm64.tar.gz"
-      sha256 "ae7ab4cbe8ea5e683e045bdbba1137f4357dddbde7bd7f8181b3d1c7ccd55bcb"
+      url "https://github.com/namest504/termtype/releases/download/v0.2.3/termtype_linux_arm64.tar.gz"
+      sha256 "124c21046db4d2f16bc7af16220b52eb3599a197f5258ba3386cdddebbbc3501"
     end
     on_intel do # Linux Intel/AMD
-      url "https://github.com/namest504/termtype/releases/download/v0.2.2/termtype_linux_amd64.tar.gz"
-      sha256 "a2929baf4998f2c9d019d4386c61bd2a634f9cf1dc10ae4881528b375cbe4dca"
+      url "https://github.com/namest504/termtype/releases/download/v0.2.3/termtype_linux_amd64.tar.gz"
+      sha256 "b8d000f58912c12eff99af1329693527eaf03ceae19bb441213b5cc348597788"
     end
   end
 
   depends_on "go" => :build
 
-def install
-  bin.install "termtype"
-end
+  def install
+    bin.install "termtype"
+  end
 
   def caveats
     <<~EOS
