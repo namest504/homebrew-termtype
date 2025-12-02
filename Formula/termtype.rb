@@ -4,30 +4,30 @@
 class Termtype < Formula
   desc "A simple typing practice application for your terminal."
   homepage "https://github.com/namest504/termtype"
-  url "https://github.com/namest504/termtype/archive/refs/tags/v0.2.3.tar.gz"
-  sha256 "84cb8e9d6b24ab227c422c199696204a48c3a2499671a5dd6ba69cb98a50e8d0"
+  url "https://github.com/namest504/termtype/archive/refs/tags/v0.2.4.tar.gz"
+  sha256 "Downloading source from https://github.com/namest504/termtype/archive/refs/tags/v0.2.4.tar.gz...
 
   license "MIT"
 
   on_macos do
     on_arm do # Apple Silicon
-      url "https://github.com/namest504/termtype/releases/download/v0.2.3/termtype_darwin_arm64.tar.gz"
-      sha256 "ee76639c7dc202f6116e45650c0db52991f88f91d23bee90b8994b3ae9323f36"
+      url "https://github.com/namest504/termtype/releases/download/v0.2.4/termtype_darwin_arm64.tar.gz"
+      sha256 "842c0e94e3b1d5a9199911cb0e5b71c20bea890731b128ea4a457e1fbb7d10f4"
     end
     on_intel do # Intel Mac
-      url "https://github.com/namest504/termtype/releases/download/v0.2.3/termtype_darwin_amd64.tar.gz"
-      sha256 "26ddd4165bf1db9cc503df8d36f269138178f65a4c449d808d4e0377940197f5"
+      url "https://github.com/namest504/termtype/releases/download/v0.2.4/termtype_darwin_amd64.tar.gz"
+      sha256 "9dcaedb0f49b99efc9f696022b90b74d4ea7a7f002d210a49beb0603216baf9c"
     end
   end
 
   on_linux do
     on_arm do # Linux ARM
-      url "https://github.com/namest504/termtype/releases/download/v0.2.3/termtype_linux_arm64.tar.gz"
-      sha256 "124c21046db4d2f16bc7af16220b52eb3599a197f5258ba3386cdddebbbc3501"
+      url "https://github.com/namest504/termtype/releases/download/v0.2.4/termtype_linux_arm64.tar.gz"
+      sha256 "787905155645d2977659f015e581b1a4ab7e423718ee7912baa56d00614600d5"
     end
     on_intel do # Linux Intel/AMD
-      url "https://github.com/namest504/termtype/releases/download/v0.2.3/termtype_linux_amd64.tar.gz"
-      sha256 "b8d000f58912c12eff99af1329693527eaf03ceae19bb441213b5cc348597788"
+      url "https://github.com/namest504/termtype/releases/download/v0.2.4/termtype_linux_amd64.tar.gz"
+      sha256 "a65dbf266485beb3f95542df28198e9da02cd051a861728ec837294a893a00ac"
     end
   end
 
