@@ -15,8 +15,8 @@ get_source_sha() {
   local version=$1
   local url="https://github.com/$REPO/archive/refs/tags/$version.tar.gz"
   
-  echo "Downloading source from $url..."
-  curl -L -o source.tar.gz "$url"
+  echo "Downloading source from $url..." >&2
+  curl -L -o source.tar.gz "$url" >&2
   local sha
   sha=$(sha256sum source.tar.gz | awk '{print $1}')
   rm source.tar.gz
