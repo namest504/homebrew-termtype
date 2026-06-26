@@ -23,6 +23,6 @@ class Termtype < Formula
   end
 
   test do
-    system "#{bin}/termtype", "--help"
+    system "#{bin}/termtype", "--version"
   end
 end
