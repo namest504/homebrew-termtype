@@ -11,7 +11,7 @@ class Termtype < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/namest504/termtype/releases/download/v0.3.0/termtype_darwin_amd64.tar.gz"
-      sha256 "7689d9f81b4c15064542fd988126494be1be5312cac66e19c7036769cf4d3811"
+      sha256 "96994d2b9fcdc9cb571acfaca5e5f8413ca9f632582954c3bd3229aa6caed0fc"
 
       define_method(:install) do
         bin.install "termtype"
@@ -19,7 +19,7 @@ class Termtype < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/namest504/termtype/releases/download/v0.3.0/termtype_darwin_arm64.tar.gz"
-      sha256 "beab37a28cda25707c56c570114de7bf642e5581b87ad2af2fefa716124b1c95"
+      sha256 "30e4648ff0f73750ad0de5cedc3ade72a45dc5d82ccedd118761147e6eb43b0a"
 
       define_method(:install) do
         bin.install "termtype"
@@ -30,14 +30,14 @@ class Termtype < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/namest504/termtype/releases/download/v0.3.0/termtype_linux_amd64.tar.gz"
-      sha256 "9ab65839af4b733e927a4946ebe8bfaf90cace70948009b5ebd24e201377749a"
+      sha256 "50e66b5671134a4475d43f095832d80fd24b638e43ef086d5c9eefa04cb59dde"
       define_method(:install) do
         bin.install "termtype"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/namest504/termtype/releases/download/v0.3.0/termtype_linux_arm64.tar.gz"
-      sha256 "5c9cf8818a6f9f9286062e84ac81e462552ee1d8f301c9cb242e5b17ad8693ef"
+      sha256 "be7e145ef20671acb945083bc1380998ced9b9f3ea532113ade1efdb3fb1381c"
       define_method(:install) do
         bin.install "termtype"
       end
