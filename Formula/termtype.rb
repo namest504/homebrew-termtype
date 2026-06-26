@@ -5,21 +5,21 @@
 class Termtype < Formula
   desc "A simple typing practice application for your terminal."
   homepage "https://github.com/namest504/termtype"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/namest504/termtype/releases/download/v0.3.0/termtype_darwin_amd64.tar.gz"
-      sha256 "96994d2b9fcdc9cb571acfaca5e5f8413ca9f632582954c3bd3229aa6caed0fc"
+      url "https://github.com/namest504/termtype/releases/download/v0.4.0/termtype_darwin_amd64.tar.gz"
+      sha256 "88289226ceabc3961b9f0980cc5c627add9f974db3c23e6a0e679814b1e0e4ce"
 
       define_method(:install) do
         bin.install "termtype"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/namest504/termtype/releases/download/v0.3.0/termtype_darwin_arm64.tar.gz"
-      sha256 "30e4648ff0f73750ad0de5cedc3ade72a45dc5d82ccedd118761147e6eb43b0a"
+      url "https://github.com/namest504/termtype/releases/download/v0.4.0/termtype_darwin_arm64.tar.gz"
+      sha256 "63cc0d6ecfa1b4eba582a4e0b28b27e5b6899fd810cb67e9b87399c98794a0c9"
 
       define_method(:install) do
         bin.install "termtype"
@@ -29,15 +29,15 @@ class Termtype < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/namest504/termtype/releases/download/v0.3.0/termtype_linux_amd64.tar.gz"
-      sha256 "50e66b5671134a4475d43f095832d80fd24b638e43ef086d5c9eefa04cb59dde"
+      url "https://github.com/namest504/termtype/releases/download/v0.4.0/termtype_linux_amd64.tar.gz"
+      sha256 "1b721fb44bd694aaa177066df622ecf4aa7a55013b08b8e6267de88503bed14d"
       define_method(:install) do
         bin.install "termtype"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/namest504/termtype/releases/download/v0.3.0/termtype_linux_arm64.tar.gz"
-      sha256 "be7e145ef20671acb945083bc1380998ced9b9f3ea532113ade1efdb3fb1381c"
+      url "https://github.com/namest504/termtype/releases/download/v0.4.0/termtype_linux_arm64.tar.gz"
+      sha256 "bdeeb9eda6a9639dae06d6ec2a9c08b3a275106d1cac40ea5717588603acb150"
       define_method(:install) do
         bin.install "termtype"
       end
